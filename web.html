@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pemesanan Hot Wheels Koleksi Langka</title>
+    <style>
+        /* CSS dasar agar tampilan lebih rapi */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #ff4500; /* Warna Hot Wheels, oranye */
+        }
+        h1 {
+            color: #ff4500;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Agar padding tidak menambah lebar */
+        }
+        fieldset {
+            border: 1px solid #ff4500;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+            color: #ff4500;
+            padding: 0 10px;
+        }
+        .item-list {
+            list-style: none;
+            padding: 0;
+        }
+        .item-list li {
+            background-color: #ffe4c4; /* Warna sedikit lebih cerah */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item-list label {
+            flex-grow: 1;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        .item-list input[type="number"] {
+            width: 60px;
+            margin-bottom: 0;
+        }
+        button {
+            background-color: #007bff; /* Biru, warna logo Hot Wheels */
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔥 Hot Wheels Collector Pre-Order Form 🔥</h1>
+        <p>Amankan koleksi die-cast langka Anda sekarang! Stok terbatas untuk para kolektor sejati.</p>
+
+        <form action="#" method="POST">
+            
+            <fieldset>
+                <legend>Data Pemesan</legend>
+                
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" placeholder= required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder= required>
+                
+                <label for="telp">Nomor Telepon/HP:</label>
+                <input type="tel" id="telp" name="telp" placeholder= required>
+
+                <label for="alamat">Alamat Lengkap (Pengiriman):</label>
+                <textarea id="alamat" name="alamat" rows="4" placeholder= required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pilih Varian Hot Wheels (Min. 1)</legend>
+                
+                <ul class="item-list">
+                    <li>
+                        <label for="nissan_r34">Nissan Skyline GT-R (R34) - Edisi Balap</label>
+                        <input type="number" id="nissan_r34" name="jumlah_r34" min="0" value="0">
+                        <span>Unit</span>
+                    </li>
+                    <li>
+                        <label for="dodge_charger">'69 Dodge Charger R/T - Muscle Car Klasik</label>
+                        <input type="number" id="dodge_charger" name="jumlah_charger" min="0" value="0">
+                        <span>Unit</span>
+                    </li>
+                    <li>
+                        <label for="mercedes_300sl">Mercedes-Benz 300 SL - Legenda Gullwing</label>
+                        <input type="number" id="mercedes_300sl" name="jumlah_300sl" min="0" value="0">
+                        <span>Unit</span>
+                    </li>
+                </ul>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Opsi Tambahan</legend>
+                
+                <label for="kurir">Pilihan Kurir Pengiriman:</label>
+                <select id="kurir" name="kurir" required>
+                    <option value="">-- Pilih Kurir --</option>
+                    <option value="reguler">Reguler (3-5 Hari Kerja)</option>
+                    <option value="express">Express (1-2 Hari Kerja)</option>
+                </select>
+                <br><br>
+
+                <label for="catatan">Catatan Khusus </label>
+                <textarea id="catatan" name="catatan" rows="3"></textarea>
+            </fieldset>
+            
+            <button type="submit"><a href="praktikum2b.html">ORDER NOW</a></button>
+
+        </form>
+        <p style="text-align: center; margin-top: 15px; font-size: 12px; color: #888;">*Harga dan total akan dikonfirmasi via email setelah pengisian formulir.</p>
+
+    </div>
+
+</body>
+</html>
