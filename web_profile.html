@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil page</title>
+
+    <style>
+      .container {
+        display: flex;
+      }
+      .tayo-section {
+        flex: 1;
+        margin-left: 100px;
+      }
+      .categories-section {
+        flex: 1;
+        position: absolute;
+        right: 0;888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888,888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888887888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888i88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+        margin-right: 30px;
+      }
+
+      /* Container yang membungkus keempat foto */
+      .photo-border {
+        border: 4px solid #333; /* ubah warna/ketebalan sesuai selera */
+        width: 350px; /* lebar kotak keseluruhan, ubah sesuai kebutuhan */
+        padding: 8px; /* jarak antara border dan gambar */
+        box-sizing: border-box;
+        background: #fff;
+        border-radius: 6px;
+        margin-left: 140px;
+      }
+
+      /* Grid 2 kolom x 2 baris */
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px; /* jarak antar gambar */
+      }
+
+      /* Atur gambar agar memenuhi sel dan mempertahankan aspect ratio */
+      .photo-grid img {
+        width: 100%;
+        height: 160px; /* tinggi tiap gambar, sesuaikan */
+        object-fit: cover; /* menjaga proporsi dan memotong jika perlu */
+        display: block;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Harits Achmad Qital - 0110225152</legend>
+      <div class="container">
+        <img src="tayo.jpeg" alt="foto tayo" />
+        <div class="tayo-section">
+          <h1>Tayo the little bus</h1>
+          <p>6666 Street</p>
+          <p>Depok, Jawa Barat</p>
+          <p>Email: qitalharis@gmail.com</p>
+          <p>Telephone: 085880118436</p>
+        </div>
+
+        <div class="categories-section">
+          <h2>Categories</h2>
+          <p>Lorem ipsum</p>
+          <p>dolor sit</p>
+          <p>Qital</p>
+          <p>dolor sit</p>
+        </div>
+      </div>
+      <div style="padding: 20px">
+        Tayo adalah karakter utama dari serial animasi Tayo the Little Bus, sebuah bus kota kecil berwarna biru dengan nomor 120 yang dikenal ceria dan penuh semangat. Sebagai bus pemula, Tayo memiliki rasa ingin tahu yang besar dan selalu bersemangat menjalani hari-harinya di jalanan kota yang sibuk. Sifatnya yang impulsif terkadang membuatnya membuat kesalahan, tetapi ia selalu belajar dari pengalamannya. 
+      </div>
+
+      <div style="padding: 20px">
+        Tayo tidak sendirian dalam petualangannya, ia dikelilingi oleh teman-teman sesama bus yang tinggal bersamanya di garasi, seperti Rogi (bus hijau) yang menjadi saingan sekaligus sahabat dekatnya, Lani (bus kuning) yang lembut, dan Gani (bus merah) yang paling dewasa. Interaksi Tayo dengan teman-temannya mengajarkan nilai-nilai penting seperti persahabatan, tanggung jawab, dan bagaimana bersikap baik kepada sesama. Setiap episode menyoroti bagaimana Tayo belajar untuk tumbuh, memahami aturan jalan raya, dan menolong pengguna jalan lain.
+      </div>
+
+      <div style="display: flex;">
+        <video src="tayo.mp4" controls style="width: 400px; height: 300px">
+          vidio spiderman
+        </video>
+        <div class="photo-border">
+          <div class="photo-grid">
+            <!-- Ganti src dengan jalur foto Anda (file lokal atau URL) -->
+            <img src="tayo.jpeg" alt="Foto 1" />
+            <img src="tayo.jpeg" alt="Foto 2" />
+            <img src="tayo.jpeg" alt="Foto 3" />
+            <img src="tayo.jpeg" alt="Foto 4" />
+          </div>
+        </div>
+        <div>
+        <fieldset style="height: 150px; position: absolute; right: 0; margin-right: 30px;">
+          <legend>Sosial Media</legend>
+          <a href="https://www.instagram.com/reel/C9w7LMiCzdP/?igsh=endyeTRqN251Nmht">Instagram</a> <br>
+          <a href="https://youtu.be/ThM0EdT1ByU?feature=shared">Youtube</a> <br>
+          <a href="https://vm.tiktok.com/ZSHvAdAumEFHr-opjW0/ Postingan ini dibagikan via TikTok Lite. Unduh TikTok Lite untuk menikmati postingan lainnya: https://www.tiktok.com/tiktoklite">Tiktok</a>
+        </div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </body>
+</html>
